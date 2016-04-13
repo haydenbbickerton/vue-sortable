@@ -16,6 +16,7 @@
     Vue.directive('sortable', function (options) {
       options = options || {}
       this.sortable = new Sortable(this.el, options)
+      this.vm.sortable = this.sortable
     })
   }
 
